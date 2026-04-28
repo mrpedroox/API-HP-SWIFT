@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HaPo: Codable, Identifiable {
+struct Hapo: Codable, Identifiable {
     let id: String
     let name: String?
     let alternate_names: [String]?

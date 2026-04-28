@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 struct Service{
-    func fetchHaPo(url: URL) -> AnyPublisher<[Hapo], Error>{
+    func fetchHapo(url: URL) -> AnyPublisher<[Hapo], Error>{
         return URLSession.shared.dataTaskPublisher(for: url)
             .map(\.data)
             .decode(type: [Hapo].self, decoder: JSONDecoder())
